@@ -1,2 +1,4 @@
-virt-env
+.git/
 .gitignore
+.github/
+.gitlab/
