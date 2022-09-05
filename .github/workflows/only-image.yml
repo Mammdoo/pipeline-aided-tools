@@ -11,6 +11,6 @@ on:
 
 jobs:
   Baking:
-    runs-on: mammdoo-runner-sine
+    runs-on: [self-hosted, mammdoo-runner-sine]
     steps:
       - uses: actions/checkout@v3
