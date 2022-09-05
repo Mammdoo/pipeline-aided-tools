@@ -12,5 +12,5 @@ on:
 jobs:
   Baking:
     runs-on: mammdoo-runner-sine
-    step:
-      - actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
