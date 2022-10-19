@@ -17,5 +17,5 @@ jobs:
         uses: actions/checkout@v3
   Baking:
     secrets: inherit
-    uses: Mammdoo/actions-reusable-workflow/.github/workflows/scaffold-base-image.yml@main
+    uses: mammdoo/actions-reusable-workflow/.github/workflows/scaffold-base-image.yml@main
     needs: [Checkout]
