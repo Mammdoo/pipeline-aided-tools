@@ -11,6 +11,6 @@ on:
 jobs:
   Baking:
     runs-on: ubuntu-latest
+    secrets: inherit
     steps:
       - uses: mammdoo/actions-scaffold-base-image@main
-        secrets: inherit
