@@ -1,4 +1,4 @@
-name: Only Image Build
+name: Baking 
 
 on:
   push:
@@ -7,6 +7,6 @@ on:
 
 
 jobs:
-  runs-on: mammdoo-runner-sine
+  runs-on: ubuntu-latest
   step:
-    - actions/checkout@v3
+    - mammdoo/actions-scaffold-base-image@main
