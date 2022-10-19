@@ -9,4 +9,4 @@ on:
 jobs:
   runs-on: ubuntu-latest
   step:
-    - uses: mammdoo/actions-scaffold-base-image@main
+    - uses: Mammdoo/actions-scaffold-base-image@main
