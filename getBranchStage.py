@@ -2,7 +2,7 @@
 # coding=utf-8
 
 import sys
-import validate
+from utils import validate
 from branch import flow
 
 
