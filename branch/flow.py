@@ -27,13 +27,13 @@ customize_to_business_product = [
     {"regex": "master", "cluster": "staging", "public_registry": "disabled"},
     {"regex": "main", "cluster": "staging", "public_registry": "disabled"},
     {"regex": "^[v]{0,1}([0-9]|[1-9][0-9]+)(\\.([0-9]|[1-9][0-9]+)){2,}$", "cluster": "production", "public_registry": "enabled"},
-    {"regex": "^baseline-([1-9][0-9]+)$", "cluster": "production", "public_registry": "enabled"}
+    {"regex": "^baseline-([0-9]|[1-9][0-9]+)(\\.([0-9]|[1-9][0-9]+)){2,}$", "cluster": "baseline", "public_registry": "enabled"}
 ]
 
 match_branch_model = [
     {"model": "git", "flow": standard_git_flow},
     {"model": "github", "flow": standard_github_flow},
-    {"model": "tob", "flow": standard_github_flow}
+    {"model": "tob", "flow": customize_to_business_product}
 ]
 
 def getBranchFlow(branch_model):
